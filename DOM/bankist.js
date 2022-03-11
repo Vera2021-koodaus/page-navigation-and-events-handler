@@ -27,13 +27,6 @@ navlist.addEventListener('mouseout',function(e){
 
 })
 
-
-
-
-
-
-
-
 // module section 
 const openacBtn=document.querySelector('.last');
 const model=document.querySelector('.module');
@@ -130,7 +123,7 @@ btnsDelegator.addEventListener('click',
     const btn=e.target
     if(!btn)return;
     btns.forEach(
-        btn=>btn.classList.remove('active')
+        btn=>btn.classList.remove('btn-active')
     )
     contents.forEach(
         content=>content.classList.remove('display-active')
